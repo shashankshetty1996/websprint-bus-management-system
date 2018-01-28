@@ -1,0 +1,18 @@
+{
+  "name": "b4-node-mysql",
+  "version": "1.0.0",
+  "description": "Starter pack that includes bootstrap 4 and Node Js with MySQL Database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Shashank S Shetty",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mysql": "^2.15.0"
+  }
+}

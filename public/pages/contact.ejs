@@ -1,0 +1,42 @@
+<section id="contact" class="fullscreen">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="w-50 mt-5">
+                <div class="card animated fadeInDownBig">
+                    <div class="card-body">
+                        <form name="form" ng-submit="contact()" role="form">
+                            <div class="form-group" ng-class="{ 'has-error': form.fname.$dirty && form.fname.$error.required }">
+                                <label for="username">First Name</label>
+                                <input type="text" name="fname" id="fname" class="form-control" ng-model="fname" required placeholder="Enter your first name here" />
+                                <span ng-show="form.fname.$dirty && form.fname.$error.required" class="help-block text-danger">First Name is required</span>
+                            </div>
+                            <div class="form-group" ng-class="{ 'has-error': form.lname.$dirty && form.lname.$error.required }">
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="lname" id="lname" class="form-control" ng-model="lname" required placeholder="Enter your last name here" />
+                                <span ng-show="form.lname.$dirty && form.lname.$error.required" class="help-block text-danger">Last Name is required</span>
+                            </div>
+                            <div class="form-group" ng-class="{ 'has-error': form.phone.$dirty && form.phone.$error.required }">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phone" class="form-control" ng-model="phone" required placeholder="Enter your Phone Number here" />
+                                <span ng-show="form.phone.$dirty && form.phone.$error.required" class="help-block text-danger">Last Name is required</span>
+                            </div>
+                            <div class="form-group" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
+                                <label for="phone">Email ID</label>
+                                <input type="email" name="email" id="email" class="form-control" ng-model="email" required placeholder="Enter your Email ID here" />
+                                <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block text-danger">Email is required</span>
+                            </div>
+                            <div class="form-group" ng-class="{ 'has-error': form.message.$dirty && form.message.$error.required }">
+                                <label for="message">Message</label>
+                                <textarea name="messge" id="message" ng-model="message" cols="30" class="form-control" placeholder="Please Pass your message here"></textarea>
+                                <span ng-show="form.message.$dirty && form.message.$error.required" class="help-block text-danger">Email is required</span>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
