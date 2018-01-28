@@ -1,0 +1,2 @@
+# websprint-bus-management-system
+Final round of websprint was basically where we had to design a website without using internet and frameworks where provided in advance. We had to design both frontend and backend as well. Front end uses Bootstrap 4 and Angularjs where as backend i used Node JS and MySQL database for auth i used jasonwebtoken. i ran with some issues in the angular auth service so both frontend and backend functions together failed to work in this application. I would loved if someone wants to fix this issue and push it back to my repository.
